@@ -4,24 +4,16 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-    /*var 'article-One' : {
-            title: 'article-One',
-        heading: 'Article1',
-        date:'5 Sep 2016',
-        content:`<p>Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.</p>
-                <img  style = "margin-left:400px" src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMll5YEJ0nClij7eyjrn67BTCinSdCcE6ItiahhKpEceEWsMIW" alt = "image of article" class = "width">
-                <p>Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding</p>`
-        },*/
 var articles = {
-        var 'article-One' : {
-            title: 'article-One',
+       'article-One' : {
+        title: 'article-one',
         heading: 'Article1',
-        date:'5 Sep 2016',
+        date: '5 Sep 2016',
         content:`<p>Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.</p>
                 <img  style = "margin-left:400px" src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMll5YEJ0nClij7eyjrn67BTCinSdCcE6ItiahhKpEceEWsMIW" alt = "image of article" class = "width">
                 <p>Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding</p>`
         },
-        var 'article-Two' : {
+        'article-Two' : {
         title: 'article-two',
         heading: 'Article2',
         date:'5 Sep 2016',
@@ -29,7 +21,7 @@ var articles = {
                 <img  style = "margin-left:400px" src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMll5YEJ0nClij7eyjrn67BTCinSdCcE6ItiahhKpEceEWsMIW" alt = "image of article" class = "width">
                 <p>Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding</p>`
     },
-    var 'article-Three' : {title: 'article-three',
+    'article-Three' : {title: 'article-three',
         heading: 'Article3',
         date:'5 Sep 2016',
         content:`<p>Article three Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.</p>
