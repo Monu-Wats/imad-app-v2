@@ -4,14 +4,14 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-    //var articleOne : {
-        title: 'article-one',
+    /*var 'article-One' : {
+            title: 'article-One',
         heading: 'Article1',
         date:'5 Sep 2016',
         content:`<p>Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.Article One Is very Popular.</p>
                 <img  style = "margin-left:400px" src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMll5YEJ0nClij7eyjrn67BTCinSdCcE6ItiahhKpEceEWsMIW" alt = "image of article" class = "width">
                 <p>Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding.Article One Is outstanding</p>`
-    },
+        },*/
 var articles = {
         var 'article-One' : {
             title: 'article-One',
@@ -85,14 +85,6 @@ app.get('/:articleName',function(req,res){
     //articleName = article-one
     var articleName = req.params.articleName;
    res.send(createTemplate(articles[articleName]));
-});
-
-app.get('/article-two',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-
-app.get('/article-three',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
