@@ -62,6 +62,9 @@ function createTemplate(data)
     `;
     return htmlTemplate;
 }
+app.get('/resume',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','resume.html'));
+});
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
