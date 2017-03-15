@@ -62,7 +62,7 @@ function createTemplate(data)
                 <a href = "/" style = "color:green">Home</a>
                 <hr/>
                 <h3>${heading}</h3>
-                <div>${data}</div>
+                <div>${data.toDateString()}</div>
                 ${content}
             </div>
         </body>
