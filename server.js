@@ -7,7 +7,7 @@ var config = {
     database : 'monu-wats',
     host : 'db.imad.hasura-app.io',
     port : '5432',
-    password :  process.enu.DB_PASSWORD 
+    password :  process.env.DB_PASSWORD 
     
 };
 var app = express();
