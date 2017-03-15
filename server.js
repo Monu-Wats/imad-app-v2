@@ -75,7 +75,7 @@ app.get('/counter',function(req,res){
    counter = counter + 1;
    res.send(counter.toString());
 });
-var poop = new Pool(config);
+var pool = new Pool(config);
 app.get('/test-db',function(req,res){
    //make a select request 
    //return response with the results
