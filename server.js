@@ -106,7 +106,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/article/:articleName',function(req,res){
+app.get('/articles/:articleName',function(req,res){
     //articleName = article-one
     pool.query("SELECT * FROM article WHERE title = '"+req.params.articleName+"'",function(err,result){
         if(err)
@@ -118,7 +118,7 @@ app.get('/article/:articleName',function(req,res){
                 res.status(404).send('Article Not Found');
             }
             else{
-                var articleData = result.row[0];
+                var articleData = result.rows[0];
                 res.send(createTemplate(articleData));
             }
         }
